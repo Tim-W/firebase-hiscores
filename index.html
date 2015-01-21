@@ -1,0 +1,112 @@
+<html ng-app="hiscores">
+<head>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <title>2006Kayos - Hiscores</title>
+    <link href="css/basic-3.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/hiscores-1.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/icon.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="js/jquery/jquery_1_3_2.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+<div id="body"><font color="white">
+    <div class="frame e">
+        <span style="float: right;">
+        <a href="http://06kayos.com">Main Page</a> | <a href="../login.php">Login</a>                </span>
+
+        <div>
+            You are not logged in.
+        </div>
+    </div>
+</font>
+    <br/>
+
+    <div id="hiscoretitlebground">
+        <div class="frame e">
+            <strong><FONT COLOR="white">2006Kayos Hiscores</FONT></strong><br>
+            <a href="http://06kayos.com">Main Menu</a><br/>
+        </div>
+    </div>
+
+    <div id="hs_wrap">
+        <div id="hs_cat">
+            <div id="skills">
+                <ul>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Overall'})"><span class="none">Overall</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Attack'})"><span class="icon atk">Attack</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Defense'})"><span class="icon def">Defense</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Strength'})"><span class="icon str">Strength</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Hitpoints'})"><span class="icon hp">Hitpoints</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Ranged'})"><span class="icon range">Ranged</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Prayer'})"><span class="icon pray">Prayer</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Magic'})"><span class="icon mage">Magic</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Cooking'})"><span class="icon cook">Cooking</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Woodcutting'})"><span class="icon wc">Woodcutting</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Fletching'})"><span class="icon fl">Fletching</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Fishing'})"><span class="icon fish">Fishing</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Firemaking'})"><span class="icon fire">Firemaking</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Crafting'})"><span class="icon craft">Crafting</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Smithing'})"><span class="icon smith">Smithing</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Mining'})"><span class="icon mine">Mining</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Herblore'})"><span class="icon herb">Herblore</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Agility'})"><span class="icon agil">Agility</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Thieving'})"><span class="icon thief">Thieving</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Slayer'})"><span class="icon slay">Slayer</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Farming'})"><span class="icon farm">Farming</span></a></li>
+                    <li><a ui-sref="hiscoresOverview({skill: 'Runecraft'})"><span class="icon rc">Runecraft</span></a></li>
+                </ul>
+            </div>
+            </li>
+            </ul>
+        </div>
+
+        <div id="hs_body">
+            <div id="mainscroll-top"></div>
+
+            <div id="mainscroll-bgimg">
+                <div id="hbs_body">
+
+                    <a id="up" href="hiscores7472.html?type=&amp;from=0"><img src="img/hiscores/arrow_up.png"
+                                                                              alt="Scroll Up"/></a>
+                    <a id="down" href="hiscores472e.html?type=&amp;from=21"><img src="img/hiscores/arrow_down.png"
+                                                                                 alt="Scroll Down"/></a>
+                        <ui-view></ui-view>
+                </div>
+            </div>
+            <div id="mainscroll-bottom">
+            </div>
+        </div>
+
+
+        <div id="hs_side">
+            <div class="hiscorebutton">
+<span><strong>Search by name</strong><br>
+<input size="14" style="margin: 2px; margin-top: 5px;" class="textinput text" maxlength="12" type="text"
+       name="character" id="character">
+<input size="14" class="buttonmedium" name="search" type="submit" value="Search"
+       onclick="if(document.getElementById('character').value) { location.href = '/hiscores/personal.ws?name='+document.getElementById('character').value; } else { alert('Please write a name'); }">
+</span>
+            </div>
+
+            <div class="hiscorebutton">
+<span><strong>Search by rank</strong><br>
+<input size="14" style="margin: 2px; margin-top: 5px;" class="textinput text" maxlength="12" type="text" name="rank"
+       id="rank">
+<input size="14" class="buttonmedium" name="search" type="submit" value="Search"
+       onclick="if(document.getElementById('rank').value) { location.href = '/hiscores/\hiscores.ws?table=&from='+document.getElementById('rank').value; } else { alert('Please write a rank number'); }">
+</span>
+            </div>
+        </div>
+        <div class="tandc">
+            <font color="white">
+                Most of the pictures on this website are copyright &copy; 1999 - 2014 <a href="http://www.jagex.com/">Jagex
+                Ltd.</a>
+            </font>
+        </div>
+    </div>
+</html>
+</html>

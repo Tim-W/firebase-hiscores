@@ -1,0 +1,27 @@
+.icon { text-indent: 20px; display: block; min-width: 13px; max-width: 18px; min-height: 15px; max-height: 18px; }
+#hs_cat a:hover {text-decoration: none;}
+#hs_cat a { color: #dbc37d; }
+.icon.atk { background: url(../img/hiscores/skill_icon_attack1.gif) no-repeat; }
+.icon.def { background: url(../img/hiscores/skill_icon_defence1.gif) no-repeat; }
+.icon.str { background: url(../img/hiscores/skill_icon_strength1.gif) no-repeat; }
+.icon.hp { background: url(../img/hiscores/skill_icon_hitpoints1.gif) no-repeat; }
+.icon.range { background: url(../img/hiscores/skill_icon_ranged1.gif) no-repeat; }
+.icon.pray { background: url(../img/hiscores/skill_icon_prayer1.gif) no-repeat; }
+.icon.mage { background: url(../img/hiscores/skill_icon_magic1.gif) no-repeat; }
+.icon.cook { background: url(../img/hiscores/skill_icon_cooking1.gif) no-repeat; }
+.icon.wc { background: url(../img/hiscores/skill_icon_woodcutting1.gif) no-repeat; }
+.icon.fl { background: url(../img/hiscores/skill_icon_fletching1.gif) no-repeat; }
+.icon.fish { background: url(../img/hiscores/skill_icon_fishing1.gif) no-repeat; }
+.icon.fire { background: url(../img/hiscores/skill_icon_firemaking1.gif) no-repeat; }
+.icon.smith { background: url(../img/hiscores/skill_icon_smithing1.gif) no-repeat; }
+.icon.mine { background: url(../img/hiscores/skill_icon_mining1.gif) no-repeat; }
+.icon.herb { background: url(../img/hiscores/skill_icon_herblore1.gif) no-repeat; }
+.icon.craft { background: url(../img/hiscores/skill_icon_crafting1.gif) no-repeat; }
+.icon.agil { background: url(../img/hiscores/skill_icon_agility1.gif) no-repeat; }
+.icon.thief { background: url(../img/hiscores/skill_icon_thieving1.gif) no-repeat; }
+.icon.slay { background: url(../img/hiscores/skill_icon_slayer1.gif) no-repeat; }
+.icon.farm { background: url(../img/hiscores/skill_icon_farming1.gif) no-repeat; }
+.icon.rc { background: url(../img/hiscores/skill_icon_runecraft1.gif) no-repeat; }
+
+
+

@@ -1,0 +1,31 @@
+#hiscoretitlebground {
+	width: 766px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../img/hiscores/header.png");
+	background-repeat: no-repeat;
+	background-position: 7px 0;
+	padding-top: 40px;
+}
+#hiscoretitlebground .frame {
+	width: 151px; 
+}
+.hiscorebutton {
+	background-image: url("../img/hiscores/hiscorebutton.png");
+	background-repeat: no-repeat;
+	height: 98px;
+	width: 152px;
+	color: #D9C27E;
+	padding-top: 12px;
+	text-align: center;
+}
+.hiscorelargebutton {
+	background-image: url("../img/hiscores/hiscorebuttonbig.png");
+	background-repeat: no-repeat;
+	height: 124px;
+	width: 152px;
+	color: #D9C27E;
+	padding-top: 12px;
+	text-align: center;
+}
